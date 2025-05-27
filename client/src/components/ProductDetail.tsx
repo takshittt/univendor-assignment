@@ -237,7 +237,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ addToCart }) => {
         category: product.category,
         price: product.price,
         originalPrice: product.originalPrice,
-        image: product.images[0],
+        image: product.images[0]!,
         inStock: product.inStock,
       },
       quantity,
