@@ -39,46 +39,6 @@ interface ProductDetailProps {
 // Extended mock data for products
 const mockProducts: { [key: string]: Product } = {
   "1": {
-    id: "1",
-    name: "Wireless Bluetooth Headphones",
-    category: "Electronics",
-    price: 89.99,
-    originalPrice: 129.99,
-    rating: 4.5,
-    reviewCount: 2847,
-    description:
-      "Experience premium sound quality with our state-of-the-art wireless Bluetooth headphones. Featuring advanced noise cancellation technology, these headphones deliver crystal-clear audio while blocking out unwanted ambient noise. Perfect for music lovers, professionals, and anyone who values superior audio quality.",
-    features: [
-      "Active Noise Cancellation (ANC)",
-      "30-hour battery life",
-      "Quick charge: 15 minutes = 3 hours playback",
-      "Premium leather ear cushions",
-      "Multi-device connectivity",
-      "Built-in voice assistant support",
-      "Foldable design for portability",
-    ],
-    specifications: {
-      "Driver Size": "40mm",
-      "Frequency Response": "20Hz - 20kHz",
-      Impedance: "32Ω",
-      "Bluetooth Version": "5.0",
-      "Battery Life": "30 hours (ANC off), 25 hours (ANC on)",
-      "Charging Time": "2 hours",
-      Weight: "250g",
-      Warranty: "2 years",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&h=600&fit=crop&crop=center",
-    ],
-    inStock: true,
-    stockCount: 47,
-    brand: "AudioTech",
-    sku: "AT-WBH-001",
-    tags: ["wireless", "bluetooth", "noise-cancelling", "premium"],
-  },
-  "2": {
     id: "2",
     name: "Men's Casual Shirt",
     category: "Fashion",
@@ -106,91 +66,15 @@ const mockProducts: { [key: string]: Product } = {
       "Sizes Available": "S, M, L, XL, XXL",
     },
     images: [
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=600&fit=crop&crop=center",
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/v/x/w/m-beige-chex-shirt-formal-vellosta-original-imahap5c7chpyhzg.jpeg?q=90&crop=false",
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/f/x/u/m-beige-chex-shirt-formal-vellosta-original-imahap5cz32bhsja.jpeg?q=90&crop=false",
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/y/m/l/m-beige-chex-shirt-formal-vellosta-original-imahap5cbfhavrzd.jpeg?q=90&crop=false",
     ],
     inStock: true,
     stockCount: 156,
     brand: "ClassicWear",
     sku: "CW-CS-002",
     tags: ["casual", "cotton", "comfortable", "versatile"],
-  },
-  "3": {
-    id: "3",
-    name: "Smart LED Light Bulb",
-    category: "Home",
-    price: 24.99,
-    rating: 4.8,
-    reviewCount: 3521,
-    description:
-      "Transform your home lighting with our intelligent LED bulb that combines energy efficiency with smart technology. Control your lighting from anywhere using your smartphone, set schedules, and choose from millions of colors to create the perfect ambiance for any occasion.",
-    features: [
-      "16 million color options",
-      "Voice control compatible (Alexa, Google)",
-      "Energy efficient - 80% less energy than traditional bulbs",
-      "Smartphone app control",
-      "Scheduling and timer functions",
-      "25,000 hour lifespan",
-      "Dimming capabilities",
-      "No hub required - direct WiFi connection",
-    ],
-    specifications: {
-      Wattage: "9W (equivalent to 60W incandescent)",
-      Brightness: "800 lumens",
-      "Color Temperature": "2700K-6500K",
-      Connectivity: "WiFi 2.4GHz",
-      "Base Type": "E26/E27",
-      Lifespan: "25,000 hours",
-      Dimensions: '2.4" x 4.3"',
-      "Operating Temperature": "-10°C to 40°C",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=600&h=600&fit=crop&crop=center",
-    ],
-    inStock: true,
-    stockCount: 234,
-    brand: "SmartHome",
-    sku: "SH-LED-003",
-    tags: ["smart", "led", "energy-efficient", "voice-control"],
-  },
-  "4": {
-    id: "4",
-    name: "Organic Face Serum",
-    category: "Beauty",
-    price: 32.99,
-    rating: 4.7,
-    reviewCount: 892,
-    description:
-      "Rejuvenate your skin with our premium organic face serum, formulated with natural ingredients and cutting-edge skincare science. This lightweight, fast-absorbing serum delivers intense hydration while targeting signs of aging, leaving your skin looking radiant and youthful.",
-    features: [
-      "100% organic and natural ingredients",
-      "Hyaluronic acid for deep hydration",
-      "Vitamin C for brightening",
-      "Anti-aging peptides",
-      "Suitable for all skin types",
-      "Cruelty-free and vegan",
-      "Dermatologist tested",
-      "Lightweight, non-greasy formula",
-    ],
-    specifications: {
-      Volume: "30ml (1 fl oz)",
-      "Key Ingredients": "Hyaluronic Acid, Vitamin C, Retinol, Peptides",
-      "Skin Type": "All skin types",
-      Application: "Morning and evening",
-      "Shelf Life": "24 months",
-      Packaging: "Dark glass bottle with dropper",
-      Certifications: "USDA Organic, Cruelty-Free",
-      Origin: "Made in France",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&h=600&fit=crop&crop=center",
-    ],
-    inStock: true,
-    stockCount: 89,
-    brand: "PureGlow",
-    sku: "PG-FS-004",
-    tags: ["organic", "anti-aging", "hydrating", "natural"],
   },
 };
 
@@ -201,7 +85,37 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ addToCart }) => {
   const [primarySelectedImage, setPrimarySelectedImage] = useState(0); // Track the clicked/primary selected image
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("");
+  const [selectedColor, setSelectedColor] = useState(0);
+  const [hoveredColor, setHoveredColor] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState("description");
+
+  // Color options with the provided images
+  const colorOptions = [
+    {
+      id: 0,
+      name: "Beige Check",
+      image:
+        "https://rukminim2.flixcart.com/image/180/180/xif0q/shirt/f/x/u/m-beige-chex-shirt-formal-vellosta-original-imahap5cz32bhsja.jpeg?q=50",
+      mainImage:
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/f/x/u/m-beige-chex-shirt-formal-vellosta-original-imahap5cz32bhsja.jpeg?q=90&crop=false",
+    },
+    {
+      id: 1,
+      name: "Dark Blue",
+      image:
+        "https://rukminim2.flixcart.com/image/180/180/xif0q/shirt/9/f/6/-original-imahb3gyguhmybad.jpeg?q=50",
+      mainImage:
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/9/f/6/-original-imahb3gyguhmybad.jpeg?q=90&crop=false",
+    },
+    {
+      id: 2,
+      name: "Light Blue",
+      image:
+        "https://rukminim2.flixcart.com/image/180/180/xif0q/shirt/z/a/r/-original-imahb3gf2xy5dxr5.jpeg?q=50",
+      mainImage:
+        "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/z/a/r/-original-imahb3gf2xy5dxr5.jpeg?q=90&crop=false",
+    },
+  ];
 
   const product = id ? mockProducts[id] : null;
 
@@ -254,47 +168,30 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ addToCart }) => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center">
-            <button
-              onClick={() => navigate("/")}
-              className="flex items-center text-gray-600 hover:text-indigo-600 mr-4"
+          <button
+            onClick={() => navigate("/")}
+            className="flex items-center text-gray-600 hover:text-indigo-600"
+          >
+            <svg
+              className="h-4 w-4 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="h-5 w-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to Home
-            </button>
-            <div className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-indigo-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <path d="M16 10a4 4 0 0 1-8 0"></path>
-              </svg>
-              <span className="text-lg font-bold">ShopEase</span>
-            </div>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            Back to Home
+          </button>
         </div>
-      </header>
+      </div>
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -302,7 +199,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ addToCart }) => {
           <div className="space-y-4">
             <div className="aspect-square rounded-lg overflow-hidden bg-white shadow-lg">
               <img
-                src={product.images[selectedImage]}
+                src={
+                  hoveredColor !== null
+                    ? colorOptions[hoveredColor]?.mainImage
+                    : selectedColor !== null
+                    ? colorOptions[selectedColor]?.mainImage ||
+                      product.images[selectedImage]
+                    : product.images[selectedImage]
+                }
                 alt={product.name}
                 className="w-full h-full object-cover transition-all duration-300 ease-in-out"
               />
@@ -410,6 +314,37 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ addToCart }) => {
 
             {/* Quantity and Size */}
             <div className="space-y-4">
+              {/* Color Selection */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Color
+                </label>
+                <div className="flex space-x-2">
+                  {colorOptions.map((color) => (
+                    <button
+                      key={color.id}
+                      onClick={() => setSelectedColor(color.id)}
+                      onMouseEnter={() => setHoveredColor(color.id)}
+                      onMouseLeave={() => setHoveredColor(null)}
+                      className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 hover:border-indigo-400 hover:shadow-md hover:scale-105 ${
+                        selectedColor === color.id
+                          ? "border-indigo-600 shadow-lg"
+                          : hoveredColor === color.id
+                          ? "border-indigo-400 shadow-md"
+                          : "border-gray-300"
+                      }`}
+                      title={color.name}
+                    >
+                      <img
+                        src={color.image}
+                        alt={color.name}
+                        className="w-full h-full object-cover transition-transform duration-200"
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               {product.category === "Fashion" && (
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
